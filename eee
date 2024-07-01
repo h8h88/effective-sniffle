@@ -1,6 +1,6 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroeramaa/TurtleLib/main/TurtleUiLib.lua"))()
 
-local window = library:Window("Murder time alzheimer script | By h8h8")
+local window = library:Window("MT alzheimer script By h8h8")
 
 window:Label("Main", Color3.fromRGB(127, 143, 166))
 
