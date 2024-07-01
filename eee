@@ -1,0 +1,281 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroeramaa/TurtleLib/main/TurtleUiLib.lua"))()
+
+local window = library:Window("Murder time alzheimer script | By h8h8")
+
+window:Label("Main", Color3.fromRGB(127, 143, 166))
+
+window:Button("Rollback", function()
+local args = {
+    [1] = {
+        ["Controls"] = {
+            ["Console"] = {
+                ["EmoteWheel"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonY"
+                },
+                ["Emote3"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadDown"
+                },
+                ["Emote4"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadLeft"
+                },
+                ["CamLock"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonB"
+                },
+                ["Ability"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonL2"
+                },
+                ["Emote1"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadUp"
+                },
+                ["Emote2"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadRight"
+                },
+                ["Attack"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonR2"
+                }
+            },
+            ["PC"] = {
+                ["EmoteWheel"] = {
+                    [1] = "KeyCode",
+                    [2] = "\255"
+                },
+                ["Emote3"] = {
+                    [1] = "KeyCode",
+                    [2] = "Three"
+                },
+                ["Emote4"] = {
+                    [1] = "KeyCode",
+                    [2] = "Four"
+                },
+                ["CamLock"] = {
+                    [1] = "KeyCode",
+                    [2] = "LeftShift"
+                },
+                ["Ability"] = {
+                    [1] = "KeyCode",
+                    [2] = "E"
+                },
+                ["Emote1"] = {
+                    [1] = "KeyCode",
+                    [2] = "One"
+                },
+                ["Emote2"] = {
+                    [1] = "KeyCode",
+                    [2] = "Two"
+                },
+                ["Attack"] = {
+                    [1] = "UserInputType",
+                    [2] = "MouseButton1"
+                }
+            }
+        },
+        ["SFX"] = 100,
+        ["Nametag"] = true,
+        ["AutoJump"] = true,
+        ["SellDupes"] = false,
+        ["ButtonClick"] = true,
+        ["TouchButtons"] = {
+            ["Ability"] = {
+                ["Size"] = {
+                    [1] = 0.1195123940706253,
+                    [2] = 0.2300613522529602
+                },
+                ["Pos"] = {
+                    [1] = 0.7803251147270203,
+                    [2] = 0.22159510850906372
+                }
+            },
+            ["Jump"] = {
+                ["Size"] = {
+                    [1] = 0.09959366172552109,
+                    [2] = 0.19171778857707977
+                },
+                ["Pos"] = {
+                    [1] = 0.9019201993942261,
+                    [2] = 0.8113496899604797
+                }
+            },
+            ["Emote"] = {
+                ["Size"] = {
+                    [1] = 0.05975619703531265,
+                    [2] = 0.1150306761264801
+                },
+                ["Pos"] = {
+                    [1] = 0.8802437782287598,
+                    [2] = 0.3830306828022003
+                }
+            },
+            ["CamLock"] = {
+                ["Size"] = {
+                    [1] = 0.05975619703531265,
+                    [2] = 0.1150306761264801
+                },
+                ["Pos"] = {
+                    [1] = 0.9399999976158142,
+                    [2] = 0.2683374285697937
+                }
+            }
+        },
+        ["HoldIndicator"] = true,
+        ["TouchSensitivity"] = 55,
+        ["KillIndicator"] = true,
+        ["Music"] = 10,
+        ["KillList"] = true,
+        ["Shadows"] = false
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.ChangeSettings:FireServer(unpack(args))
+end)
+
+
+window:Button("Undo Rollback", function()
+local args = {
+    [1] = {
+        ["Controls"] = {
+            ["Console"] = {
+                ["EmoteWheel"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonY"
+                },
+                ["Emote3"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadDown"
+                },
+                ["Emote4"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadLeft"
+                },
+                ["CamLock"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonB"
+                },
+                ["Ability"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonL2"
+                },
+                ["Emote1"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadUp"
+                },
+                ["Emote2"] = {
+                    [1] = "KeyCode",
+                    [2] = "DPadRight"
+                },
+                ["Attack"] = {
+                    [1] = "KeyCode",
+                    [2] = "ButtonR2"
+                }
+            },
+            ["PC"] = {
+                ["EmoteWheel"] = {
+                    [1] = "KeyCode",
+                    [2] = "Q"
+                },
+                ["Emote3"] = {
+                    [1] = "KeyCode",
+                    [2] = "Three"
+                },
+                ["Emote4"] = {
+                    [1] = "KeyCode",
+                    [2] = "Four"
+                },
+                ["CamLock"] = {
+                    [1] = "KeyCode",
+                    [2] = "LeftShift"
+                },
+                ["Ability"] = {
+                    [1] = "KeyCode",
+                    [2] = "E"
+                },
+                ["Emote1"] = {
+                    [1] = "KeyCode",
+                    [2] = "One"
+                },
+                ["Emote2"] = {
+                    [1] = "KeyCode",
+                    [2] = "Two"
+                },
+                ["Attack"] = {
+                    [1] = "UserInputType",
+                    [2] = "MouseButton1"
+                }
+            }
+        },
+        ["SFX"] = 100,
+        ["Nametag"] = true,
+        ["AutoJump"] = true,
+        ["SellDupes"] = false,
+        ["ButtonClick"] = true,
+        ["TouchButtons"] = {
+            ["Ability"] = {
+                ["Size"] = {
+                    [1] = 0.1195123940706253,
+                    [2] = 0.2300613522529602
+                },
+                ["Pos"] = {
+                    [1] = 0.7803251147270203,
+                    [2] = 0.22159510850906372
+                }
+            },
+            ["Jump"] = {
+                ["Size"] = {
+                    [1] = 0.09959366172552109,
+                    [2] = 0.19171778857707977
+                },
+                ["Pos"] = {
+                    [1] = 0.9019201993942261,
+                    [2] = 0.8113496899604797
+                }
+            },
+            ["Emote"] = {
+                ["Size"] = {
+                    [1] = 0.05975619703531265,
+                    [2] = 0.1150306761264801
+                },
+                ["Pos"] = {
+                    [1] = 0.8802437782287598,
+                    [2] = 0.3830306828022003
+                }
+            },
+            ["CamLock"] = {
+                ["Size"] = {
+                    [1] = 0.05975619703531265,
+                    [2] = 0.1150306761264801
+                },
+                ["Pos"] = {
+                    [1] = 0.9399999976158142,
+                    [2] = 0.2683374285697937
+                }
+            }
+        },
+        ["HoldIndicator"] = true,
+        ["TouchSensitivity"] = 55,
+        ["KillIndicator"] = true,
+        ["Music"] = 10,
+        ["KillList"] = true,
+        ["Shadows"] = false
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.ChangeSettings:FireServer(unpack(args))
+end)
+
+
+window:Button("Rejoin", function()
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+end)
